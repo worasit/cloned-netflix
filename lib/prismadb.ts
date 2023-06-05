@@ -1,6 +1,17 @@
 import { PrismaClient } from '@prisma/client';
 
-const client = global.prismadb || new PrismaClient();
-if (process.env.NODE_ENV === 'production') global.prismadb = client;
+// Docs about instantiating `PrismaClient` with Next.js:
+// https://pris.ly/d/help/next-js-best-practices
 
-export default client;
+let prisma: PrismaClient;
+
+if (process.env.NODE_ENV === 'production') {
+  prisma = new PrismaClient();
+} else {
+  if (!global.prismadb) {
+    global.prismadb = new PrismaClient();
+  }
+  prisma = global.prismadb;
+}
+
+export default prisma;
