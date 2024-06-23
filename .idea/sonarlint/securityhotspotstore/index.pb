@@ -34,3 +34,11 @@ B
 pages/auth.tsx,9/1/91b26cb3b0d282406743dd6a9ba466e3c66166a7
 D
 components/input.tsx,9/e/9e43a511c79908e650bd98e0092dce7372af698d
+D
+prisma/schema.prisma,1/8/187e4a6f168cf143dde68ce28a29ae08ce9b9578
+4
+.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
+?
+lib/prismadb.ts,5/2/52f69b02f21c756ed676dfae8a3105f4f494b6ab
+E
+pages/api/register.ts,8/1/811bb8b7e973c70062e9cd0844d69aad0b6b6b96
